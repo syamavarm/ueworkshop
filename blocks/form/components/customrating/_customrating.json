@@ -1,0 +1,46 @@
+{
+  "definitions": [
+    {
+      "title": "Custom Rating",
+      "id": "customrating",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+            "template": {
+              "jcr:title": "Custom rating",
+              "fieldType": "radio-group",
+              "fd:viewType": "customrating",
+              "enabled": true,
+              "visible": true
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "customrating",
+      "fields": [
+        {
+          "component": "container",
+          "name": "basic",
+          "label": "Basic",
+          "collapsible": false,
+          "...": "../../../../models/form-common/_basic-input-fields.json"
+        },
+        {
+        "...": "../../../../models/form-common/_help-container.json"
+        },
+        {
+          "component": "container",
+          "name": "validation",
+          "label": "Validation",
+          "collapsible": true,
+          "...": "../../../../models/form-common/_basic-validation-fields.json"
+        }
+      ]
+    }
+  ]
+}

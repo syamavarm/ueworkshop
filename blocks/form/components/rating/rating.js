@@ -73,10 +73,16 @@ export default function decorate(fieldDiv) {
     // if the index of star element is greater than 3 show happy emoji
     star.addEventListener('mouseover', () => {
       const emojiElement = ratingDiv.querySelector('.emoji');
-      if (i <= 3) {
-        emojiElement.textContent = '😢';
-      } else {
-        emojiElement.textContent = '😊';
+      if (i == 1) {
+        emojiElement.textContent = 'Poor';
+      } else if (i == 2) {
+        emojiElement.textContent = 'Fair';
+      } else if (i == 3) {
+        emojiElement.textContent = 'Average';
+      } else if (i == 4) {
+        emojiElement.textContent = 'Good';
+      } else if (i == 5) {
+        emojiElement.textContent = 'Excellent';
       }
     });
   }

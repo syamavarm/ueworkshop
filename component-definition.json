@@ -269,6 +269,24 @@
           }
         },
         {
+          "title": "Custom Rating",
+          "id": "customrating",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+                "template": {
+                  "jcr:title": "Custom rating",
+                  "fieldType": "radio-group",
+                  "fd:viewType": "customrating",
+                  "enabled": true,
+                  "visible": true
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Date Picker",
           "id": "date-input",
           "plugins": {
