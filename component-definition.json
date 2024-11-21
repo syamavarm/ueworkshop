@@ -280,7 +280,15 @@
                   "fieldType": "radio-group",
                   "fd:viewType": "customrating",
                   "enabled": true,
-                  "visible": true
+                  "visible": true,
+                  "enum": [
+                    "0",
+                    "1"
+                  ],
+                  "enumNumes": [
+                    "Item 1",
+                    "Item 2"
+                  ]
                 }
               }
             }
