@@ -3,6 +3,7 @@ main .form .rating {
     display: flex;
     gap: 5px;
     margin: 0;
+    margin-right: 50px;
 }
 
 main .form .rating .star {
@@ -16,3 +17,15 @@ main .form .rating .star.selected {
 main .form .rating:hover .star.hover {
     color: #ecba24;
 }
+
+.number-wrapper {
+    display: flex; /* Use flexbox to align items side by side */
+    gap: 10px; /* Add spacing between label and stars */
+    align-items: center;
+  }
+
+  .number-wrapper .field-label {
+    min-width: 50%; /* Set a fixed width for all labels */
+    margin: 0;
+    text-align: left; /* Align label text to the right */
+  }

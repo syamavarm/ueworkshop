@@ -1,0 +1,24 @@
+.radio-group-wrapper {
+    display: flex; /* Enables flexbox */
+    flex-wrap: wrap; /* Allows wrapping to a new line if needed */
+  }
+  
+  .radio-wrapper {
+    display: flex; /* Ensures consistent alignment if needed */
+  }
+  
+  .radio-wrapper input[type="button"] {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .radio-wrapper input[type="button"].active {
+    background-color: #95703d;
+    color: white;
+    border-color: #95703d;
+  }
