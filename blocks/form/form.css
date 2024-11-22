@@ -569,4 +569,18 @@ main .form form:not(.edit-mode) .captcha-wrapper{
 
 main .form {
     margin-left: 20%;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+main .form-wrapper {
+    background-color: teal;
+}
+
+main .form-container {
+    background-color: gray;
+}
+
+body {
+    background-color: gray;
 }
